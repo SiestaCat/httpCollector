@@ -2,7 +2,7 @@
 FROM php:7.4-apache
 
 # Copy your PHP application files to the Apache server directory
-COPY src/ /var/www/html/
+COPY . /var/www/html/
 
 # Expose port 80 to access the server
 EXPOSE 80
