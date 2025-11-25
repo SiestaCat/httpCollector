@@ -9,3 +9,9 @@ EXPOSE 80
 
 # Start Apache server in the foreground
 CMD ["apache2-foreground"]
+
+USER root
+
+RUN chown -R www-data:www-data /var/www/html
+
+USER www-data
